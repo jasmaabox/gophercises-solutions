@@ -22,6 +22,7 @@ func main() {
 	if err != nil {
 		panic(fmt.Sprintf("File: %s not found", *problems))
 	}
+	defer f.Close()
 
 	// Game and timeout threads
 	r := csv.NewReader(f)
