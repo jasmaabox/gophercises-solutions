@@ -1,4 +1,4 @@
-module github.com/jasmaabox/gophercises-solutions/02-url-shortener
+module url-shortener
 
 go 1.12
 
