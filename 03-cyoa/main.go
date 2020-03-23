@@ -42,7 +42,7 @@ func main() {
 		if story, ok := stories[arc]; ok {
 			t.Execute(w, story)
 		} else {
-			t.Execute(w, stories["intro"])
+			http.Redirect(w, r, "/intro", http.StatusSeeOther)
 		}
 	}))
 
