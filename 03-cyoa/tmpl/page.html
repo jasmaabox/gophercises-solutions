@@ -1,0 +1,22 @@
+<html>
+
+<head>
+    <title>{{.Title}} - CYOA</title>
+</head>
+
+<body>
+    <h1>{{.Title}}</h1>
+
+    {{range .Story}}
+    <p>{{.}}</p>
+    {{end}} 
+
+
+    <ul>
+        {{range .Options}}
+        <li><button onclick="location.href = '/{{.Arc}}'">{{.Text}}</button></li>
+        {{end}}
+    </ul>
+</body>
+
+</html>
